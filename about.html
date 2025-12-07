@@ -535,6 +535,55 @@
             margin-bottom: 10px;
         }
         
+        /* Business Hours Info */
+        .business-hours {
+            background: var(--light);
+            padding: 40px 0;
+        }
+        
+        .hours-container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hours-info {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            display: inline-block;
+        }
+        
+        .hours-info h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .hours-days {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .day-item {
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        .day-item.sunday {
+            background: var(--accent);
+        }
+        
+        .day-item.monday {
+            background: #999;
+        }
+        
         /* CTA Section */
         .cta {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -723,6 +772,12 @@
             .cta h2 {
                 font-size: 2rem;
             }
+            
+            .hours-days {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -750,7 +805,7 @@
     <section class="page-hero">
         <div class="container">
             <h1>About Mudra Consulting Engineers</h1>
-            <p>With over 12 years of experience, we are committed to delivering technically sound, economical, and long-lasting solutions for aging structures across Mumbai and Maharashtra.</p>
+            <p>A professional structural engineering consultancy firm specializing in Structural Audit, Building Repairs, and Rehabilitation with 12+ years of expertise.</p>
             <div class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span>/</span>
@@ -764,10 +819,17 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Professional Engineering Guidance</h3>
-                    <p>Mudra Consulting Engineers is a professional civil engineering consultancy firm specializing in Structural Audit, Building Repairs, and Rehabilitation Consultancy. Founded in 2011 by Mr. Sagar Kishor Jadhav, we have grown to become a trusted name in structural engineering across Maharashtra.</p>
+                    <h3>Company Profile</h3>
+                    <p><strong>NAME OF FIRM:</strong> MUDRA CONSULTING ENGINEERS</p>
+                    <p><strong>YEAR OF ESTABLISHMENT:</strong> JANUARY 2021</p>
+                    <p><strong>TYPE OF COMPANY:</strong> PROPRIETORSHIP</p>
+                    <p><strong>PROPRIETOR:</strong> Mr. SAGAR KISHOR JADHAV (DIPLOMA IN CIVIL)</p>
+                    <p><strong>EXPERIENCE:</strong> Personal: 12 Years | Company: 4 Years</p>
+                    <p><strong>LICENSE ENGINEER:</strong> MR. SANKET M SHAH</p>
+                    
+                    <p>Mudra Consulting Engineers is a professional civil engineering consultancy firm specializing in Structural Audit, Building Repairs, and Rehabilitation Consultancy. Founded in 2021 by Mr. Sagar Kishor Jadhav, we have established ourselves as a trusted name in structural engineering across Maharashtra.</p>
                     <p>Our focus is on ensuring structural stability, safety, and durability of existing buildings through scientific assessment, modern repair techniques, and transparent project management. We serve residential housing societies, commercial buildings, industrial premises, and government institutions.</p>
-                    <p>With our headquarters in Mumbai, we have successfully completed over 150 projects, helping building owners and residents ensure the safety and longevity of their structures.</p>
+                    <p>With our headquarters in Mumbai, we have successfully completed numerous projects, helping building owners and residents ensure the safety and longevity of their structures.</p>
                     <a href="contact.html" class="btn">Contact Us Today</a>
                 </div>
                 <div class="about-image">
@@ -847,8 +909,8 @@
     <section class="team">
         <div class="container">
             <div class="section-title">
-                <h2>Our Leadership Team</h2>
-                <p>Meet the experienced professionals dedicated to ensuring structural safety</p>
+                <h2>Our Complete Team</h2>
+                <p>Meet our dedicated team of professionals committed to structural safety and excellence</p>
             </div>
             <div class="team-grid">
                 <div class="team-member">
@@ -856,14 +918,14 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="member-info">
-                        <h3>Mr. Sagar Kishor Jadhav</h3>
-                        <span class="member-role">Founder & Principal Consultant</span>
+                        <h3>Mr. Sagar K. Jadhav</h3>
+                        <span class="member-role">Proprietor</span>
                         <div class="member-details">
                             <p><i class="fas fa-graduation-cap"></i> Diploma in Civil Engineering</p>
-                            <p><i class="fas fa-briefcase"></i> 12+ Years in Building Repairs & Structural Consultancy</p>
+                            <p><i class="fas fa-briefcase"></i> 12+ Years Experience</p>
                             <p><i class="fas fa-map-marker-alt"></i> Based in Mumbai, Maharashtra</p>
                         </div>
-                        <p>A dedicated civil engineer with extensive experience in condition assessment, rehabilitation consultancy, and supervision of structural repair works for residential and commercial buildings across Maharashtra.</p>
+                        <p>Founder of Mudra Consulting Engineers with extensive expertise in structural audits, building repairs, and rehabilitation consultancy across Maharashtra.</p>
                     </div>
                 </div>
                 <div class="team-member">
@@ -871,29 +933,119 @@
                         <i class="fas fa-user-tie"></i>
                     </div>
                     <div class="member-info">
-                        <h3>Mr. Rajesh Kumar</h3>
-                        <span class="member-role">Senior Structural Engineer</span>
+                        <h3>Mr. Sanket Shah</h3>
+                        <span class="member-role">Associate Structural Engineer & License Engineer</span>
                         <div class="member-details">
-                            <p><i class="fas fa-graduation-cap"></i> B.E. in Civil Engineering</p>
-                            <p><i class="fas fa-briefcase"></i> 8+ Years in Structural Design & Analysis</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Based in Navi Mumbai</p>
+                            <p><i class="fas fa-graduation-cap"></i> Degree in Civil Engineering</p>
+                            <p><i class="fas fa-briefcase"></i> Licensed Structural Engineer</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Based in Mumbai</p>
                         </div>
-                        <p>Specializes in structural analysis, retrofitting design, and non-destructive testing with expertise in both RCC and steel structures.</p>
+                        <p>Our licensed structural engineer specializing in structural design, analysis, and certification for residential and commercial buildings.</p>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-image">
-                        <i class="fas fa-user-hard-hat"></i>
+                        <i class="fas fa-user-tie"></i>
                     </div>
                     <div class="member-info">
-                        <h3>Mr. Amit Sharma</h3>
-                        <span class="member-role">Site Supervision Head</span>
+                        <h3>Mr. Ritesh Shingare</h3>
+                        <span class="member-role">Project Manager & Survey Incharge</span>
                         <div class="member-details">
-                            <p><i class="fas fa-graduation-cap"></i> Diploma in Civil Engineering</p>
-                            <p><i class="fas fa-briefcase"></i> 10+ Years in Construction Supervision</p>
+                            <p><i class="fas fa-graduation-cap"></i> Technical Qualification in Civil</p>
+                            <p><i class="fas fa-briefcase"></i> Site Management & Survey Expert</p>
                             <p><i class="fas fa-map-marker-alt"></i> Based in Thane</p>
                         </div>
-                        <p>Oversees all on-site activities, ensuring quality control and adherence to repair methodologies and safety protocols.</p>
+                        <p>Responsible for project management, site surveys, and ensuring accurate assessment of structural conditions.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Sandeep Bhosale</h3>
+                        <span class="member-role">Marketing Department Head</span>
+                        <div class="member-details">
+                            <p><i class="fas fa-graduation-cap"></i> Business Management</p>
+                            <p><i class="fas fa-briefcase"></i> Marketing & Client Relations</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Based in Navi Mumbai</p>
+                        </div>
+                        <p>Leads our marketing efforts and client relationship management, ensuring excellent service delivery.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Satish Wadhel</h3>
+                        <span class="member-role">Marketing & Site Executive</span>
+                        <div class="member-details">
+                            <p><i class="fas fa-graduation-cap"></i> Technical Field Experience</p>
+                            <p><i class="fas fa-briefcase"></i> Field Operations & Client Coordination</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Based in Mumbai</p>
+                        </div>
+                        <p>Manages site operations and marketing activities, ensuring seamless project execution.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Vaibhav Godawale</h3>
+                        <span class="member-role">Site Engineer</span>
+                        <div class="member-details">
+                            <p><i class="fas fa-graduation-cap"></i> Engineering Background</p>
+                            <p><i class="fas fa-briefcase"></i> Site Supervision & Quality Control</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Based in Mumbai</p>
+                        </div>
+                        <p>Oversees on-site engineering activities, ensuring quality control and adherence to technical specifications.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mrs. Snehal Mali</h3>
+                        <span class="member-role">Surveyor & CAD Designer</span>
+                        <div class="member-details">
+                            <p><i class="fas fa-graduation-cap"></i> Technical Design Qualification</p>
+                            <p><i class="fas fa-briefcase"></i> CAD Design & Technical Drawing</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Based in Mumbai</p>
+                        </div>
+                        <p>Specializes in site surveying and CAD design work for structural assessments and repair drawings.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Ashish More</h3>
+                        <span class="member-role">Interior Designer</span>
+                        <div class="member-details">
+                            <p><i class="fas fa-graduation-cap"></i> Interior Design Qualification</p>
+                            <p><i class="fas fa-briefcase"></i> Interior Design & Space Planning</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Based in Mumbai</p>
+                        </div>
+                        <p>Provides interior design services for renovation and rehabilitation projects.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Ms. Vidhiti Gawde</h3>
+                        <span class="member-role">Office Coordinator & Telecalling</span>
+                        <div class="member-details">
+                            <p><i class="fas fa-graduation-cap"></i> Office Administration</p>
+                            <p><i class="fas fa-briefcase"></i> Client Coordination & Office Management</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Based in Mumbai</p>
+                        </div>
+                        <p>Manages office operations, client coordination, and telecalling activities for smooth business operations.</p>
                     </div>
                 </div>
             </div>
@@ -910,38 +1062,38 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2011</div>
-                        <p>Mudra Consulting Engineers founded by Mr. Sagar Kishor Jadhav with a vision to provide professional structural consultancy services.</p>
+                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> January 2021</div>
+                        <p>Mudra Consulting Engineers officially established as a proprietorship firm by Mr. Sagar Kishor Jadhav with a vision to provide professional structural consultancy services.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2013</div>
-                        <p>Expanded services to include comprehensive building repair and rehabilitation consultancy, completing our first major project in Malad.</p>
+                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2021</div>
+                        <p>Successfully completed first structural audit projects in Mumbai and established credibility in the local market.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2015</div>
-                        <p>Introduced Non-Destructive Testing (NDT) services and established partnerships with leading material suppliers and contractors.</p>
+                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2022</div>
+                        <p>Expanded team with licensed structural engineer Mr. Sanket Shah and completed 10+ projects across Mumbai Metropolitan Region.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2018</div>
-                        <p>Completed our 50th project and expanded our service area to cover entire Mumbai Metropolitan Region.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2020</div>
-                        <p>Launched specialized waterproofing and terrace restoration services, becoming a one-stop solution for building maintenance.</p>
+                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2022-2023</div>
+                        <p>Completed numerous structural audit and repair projects across Mumbai, Thane, and Mira Road areas, establishing strong client relationships.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2023</div>
-                        <p>Celebrated 12 years of service with over 150 completed projects and expanded operations across Maharashtra.</p>
+                        <p>Expanded to full team of 9 professionals with diverse expertise and completed 25+ projects with 20+ satisfied clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year"><i class="fas fa-calendar-alt"></i> 2024-Present</div>
+                        <p>Continuing to serve residential societies, commercial buildings, and institutions with professional structural engineering services across Maharashtra.</p>
                     </div>
                 </div>
             </div>
@@ -977,12 +1129,25 @@
                     <h3>PAN Registered</h3>
                     <p>Officially registered with Income Tax Department</p>
                 </div>
-                <div class="cert-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-shield-alt"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="business-hours">
+        <div class="container">
+            <div class="hours-container">
+                <div class="hours-info">
+                    <h3>Our Business Hours</h3>
+                    <p>We are available to serve our clients with flexible scheduling</p>
+                    <div class="hours-days">
+                        <div class="day-item sunday">Sunday Available</div>
+                        <div class="day-item">Monday Holiday</div>
+                        <div class="day-item">Tuesday - Saturday: 9:00 AM - 7:00 PM</div>
                     </div>
-                    <h3>Professional Liability Insurance</h3>
-                    <p>Covered for professional indemnity and public liability</p>
+                    <p style="margin-top: 15px; color: var(--primary); font-weight: 600;">
+                        <i class="fas fa-phone-alt"></i> Contact: +91 9004333524
+                    </p>
                 </div>
             </div>
         </div>
@@ -1003,7 +1168,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Mudra Consulting Engineers</h3>
-                    <p>Professional civil engineering consultancy specializing in Structural Audit, Building Repairs, and Rehabilitation for over 12 years.</p>
+                    <p>Professional civil engineering consultancy specializing in Structural Audit, Building Repairs, and Rehabilitation since 2021.</p>
                     <p><strong>Tagline:</strong> Ensuring Safety. Restoring Strength.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1027,9 +1192,9 @@
                     <ul>
                         <li><a href="services.html">Structural Audit</a></li>
                         <li><a href="services.html">Non-Destructive Testing</a></li>
-                        <li><a href="services.html">Retrofitting</a></li>
-                        <li><a href="services.html">Building Repairs</a></li>
+                        <li><a href="services.html">Rehabilitation</a></li>
                         <li><a href="services.html">Waterproofing</a></li>
+                        <li><a href="services.html">Project Management</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -1038,11 +1203,12 @@
                         <li><i class="fas fa-map-marker-alt"></i> Office No. 12/A1, Shivkonkan Society, Omkar SRA Building, Kurar Village, Malad (E), Mumbai – 400097</li>
                         <li><i class="fas fa-envelope"></i> mudraconsultingengineers@gmail.com</li>
                         <li><i class="fas fa-phone"></i> +91 9004333524</li>
+                        <li><i class="fas fa-clock"></i> Sunday Available | Monday Holiday</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Mudra Consulting Engineers. All Rights Reserved.</p>
+                <p>&copy; 2024 Mudra Consulting Engineers. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -1070,7 +1236,7 @@
         // Initialize on load
         window.addEventListener('load', function() {
             // Add fade-in class to elements
-            document.querySelectorAll('.mission, .vision, .value-card, .team-member, .timeline-item, .cert-item').forEach(el => {
+            document.querySelectorAll('.mission, .vision, .value-card, .team-member, .timeline-item, .cert-item, .hours-info').forEach(el => {
                 el.classList.add('fade-in');
             });
             
